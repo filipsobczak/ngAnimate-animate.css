@@ -89,6 +89,10 @@ angular.module('ngAnimate-animate.css', ['ngAnimate'])
     return animateCSSBuild('fade','fadeIn','fadeOut');
   }])
 
+  .animation('.fade-in', ['animateCSSBuild', function(animateCSSBuild) {
+    return animateCSSBuild('fade','fadeIn','fadeOut');
+  }])
+
   .animation('.fade-up', ['animateCSSBuild', function(animateCSSBuild) {
     return animateCSSBuild('fade-up','fadeInUp','fadeOutUp');
   }])
